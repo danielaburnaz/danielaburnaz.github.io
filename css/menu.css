@@ -1,0 +1,115 @@
+body {
+    padding: 0;
+}
+
+.image-section {
+    height: 50vh;
+    background-color: var(--bg-dark);
+    background-image: url(https://i.imgur.com/LQvRsRN.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative ;
+}
+
+.content {
+    background-color: var(--bg-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content h2 {
+    font-size: var(--fs-xl);
+    font-weight: 800;
+    padding-top: var(--fs-xl);
+    padding-bottom: var(--fs-xl);
+}
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    justify-items: center;
+    max-width: 1400px;
+    justify-content: space-between;
+}
+
+.food-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* justify-items: center; */
+
+    /* margin-right: var(--spacing-small); */
+    padding-left: var(--spacing-small);
+    margin-bottom:  var(--spacing-medium);
+    /* padding-right: var(--spacing-small); */
+    /* height: 450px; */
+    width: calc(100% / 3);
+    /* width: 50%; */
+}
+
+.content h3,
+.content p {
+    padding-left: var(--spacing-small);
+    padding-top: var(--spacing-medium);
+    padding-bottom: var(--spacing-medium);
+}
+
+/* .content h3 {
+    padding-top: var(--spacing-medium);
+} */
+
+.content button {
+    font-size: var(--fs-medium);
+    text-align: center;
+    color: var(--text-white);
+    background-color: var(--button-color);
+    border: 1px solid var(--button-color);
+    border-radius: 5px;
+    padding: var(--spacing-small);
+    width: 100px;
+    margin-left: var(--spacing-small);
+    margin-bottom: var(--spacing-medium);
+}
+
+@media (max-width: 1300px) {
+    .food-wrapper{
+        align-items: center; 
+        /*mor am cautat align items vreo 2 sapt*/
+        width: 50%;
+    }
+}
+
+@media (max-width: 900px) {
+    .food-wrapper{
+        align-items: center; 
+        /*mor am cautat align items vreo 2 sapt*/
+        width: 100%;
+    }
+}
+
+.confused {
+    background-color: var(--bg-light);
+    width: 430px;
+    border: 1px solid #ddd;
+    padding: var(--spacing-tiny);
+    border-radius: 5px;
+        /* border: 10px;
+    border-color: blue;
+    border-radius: 50px;  */
+}
+
+.content img {
+    height: 290px;
+    width: 420px;
+}
